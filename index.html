@@ -71,6 +71,9 @@
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
+            <!-- Circular Image -->
+            <img src="assets/img/your-image.jpg" alt="Profile Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin-bottom: 20px;">
+            
             <h2>Aniket Dixit</h2>
             <p>Software and NLP Engineer | C.S and Linguistics | UMich '25</p>
             <a href="#about" class="btn-get-started">About Me</a>
@@ -79,6 +82,7 @@
       </div>
 
     </section><!-- /Hero Section -->
+
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -138,20 +142,19 @@
         <div class="row gy-4">
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative" style="background-image: url('assets/img/quizbowl.jpg'); background-size: cover; background-position: center; border-radius: 10px;">
-              <!-- Overlay effect for image -->
-              <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px;"></div>
+            <div class="service-item position-relative" style="background-image: url('assets/img/quizbowl.jpg'); background-size: cover; background-position: center; border-radius: 10px; overflow: hidden;">
+              <!-- Semi-transparent overlay effect for image -->
+              <!-- <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px; z-index: 1;"></div> -->             
               
-              <h4><a href="https://github.com/anidixit64/Certamen" class="stretched-link" style="position: relative; z-index: 2;">Certamen</a></h4>
-              <p style="position: relative; z-index: 2;">A Quizbowl Reader built for practicing trivia style questions with data monitoring</p>
+              <!-- Text content overlayed on top of the background -->
+              <h4 style="position: relative; z-index: 2; color: white; text-align: center; margin-top: 20px;"><a href="https://github.com/anidixit64/Certamen" class="stretched-link" style="color: inherit; text-decoration: none;">Certamen</a></h4>
+              <p style="position: relative; z-index: 2; color: white; text-align: center;">A Quizbowl Reader built for practicing trivia-style questions with data monitoring</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative" style="background-image: url('assets/img/bookapp.jpg'); background-size: cover; background-position: center; border-radius: 10px;">
-              <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px;"></div>
-              
-              <div class="icon" style="position: relative; z-index: 2;"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px;"></div>             
               <h4><a href="https://github.com/anidixit64/Bibliotheca" class="stretched-link" style="position: relative; z-index: 2;">Bibliotheca</a></h4>
               <p style="position: relative; z-index: 2;">A simple collection site to store and sort books you might want to read</p>
             </div>
@@ -159,9 +162,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative" style="background-image: url('assets/img/dylan.jpg'); background-size: cover; background-position: center; border-radius: 10px;">
-              <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px;"></div>
-              
-              <div class="icon" style="position: relative; z-index: 2;"><i class="bi bi-calendar4-week icon"></i></div>
+              <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px;"></div>  
               <h4><a href="https://github.com/anidixit64/Music-Predictor-RNN" class="stretched-link" style="position: relative; z-index: 2;">Musical Artist Predictor</a></h4>
               <p style="position: relative; z-index: 2;">Uses PyTorch and machine learning algorithms to predict musical artists based on lyrics</p>
             </div>
@@ -170,8 +171,6 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative" style="background-image: url('assets/img/piazza.jpg'); background-size: cover; background-position: center; border-radius: 10px;">
               <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px;"></div>
-              
-              <div class="icon" style="position: relative; z-index: 2;"><i class="bi bi-broadcast icon"></i></div>
               <h4><a href="https://github.com/anidixit64/Piazza-post-analyzer" class="stretched-link" style="position: relative; z-index: 2;">Piazza Post Predictor</a></h4>
               <p style="position: relative; z-index: 2;">Uses C++ predictive algorithms to guess the topics and keywords of Piazza posts</p>
             </div>
