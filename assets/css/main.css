@@ -981,7 +981,7 @@ section,
 
 .features .features-item .feature-description {
   font-size: 14px;
-  color: var(--heading-color);
+  color: var(--accent-color);
   line-height: 24px;
   margin-top: 10px;
   transition: all 0.3s ease-in-out;
