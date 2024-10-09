@@ -952,45 +952,57 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
-.features {
-  padding-top: 0;
-}
-
 .features .features-item {
-  background-color: var(--surface-color);
-  display: flex;
-  align-items: center;
+  text-align: center;
   padding: 20px;
-  transition: 0.3s;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--surface-color);
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .features .features-item i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 0;
+  font-size: 48px;
+  transition: all 0.3s ease-in-out;
 }
 
 .features .features-item h3 {
+  font-size: 20px;
+  margin-top: 10px;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 16px;
 }
 
 .features .features-item h3 a {
   color: var(--heading-color);
-  transition: 0.3s;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
+.features .features-item .feature-description {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 24px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Hover effects */
 .features .features-item:hover {
-  border-color: var(--accent-color);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
 }
 
+.features .features-item:hover .feature-description {
+  opacity: 1;
+  max-height: 200px; /* Ensures the text expands */
+}
+
+.features .features-item:hover i,
 .features .features-item:hover h3 a {
-  color: var(--accent-color);
+  color: var(--accent-color); /* Change icon and heading color on hover */
 }
 
 /*--------------------------------------------------------------
