@@ -935,7 +935,7 @@ section,
 .services .service-item:before {
   content: "";
   position: absolute;
-  background: rgba(40, 46, 19, 0.2); /* Dark overlay */
+  background: rgba(40, 46, 19, 0.75); /* Dark overlay */
   inset: 100% 0 0 0;
   transition: all 0.3s;
   z-index: -1;
@@ -946,7 +946,7 @@ section,
 }
 
 .services .service-item:hover {
-  background-color: rgba(40, 46, 19, 0.2); /* Maintain background when hovering */
+  background-color: rgba(40, 46, 19, 0.75); /* Maintain background when hovering */
 }
 
 /*--------------------------------------------------------------
