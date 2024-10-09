@@ -883,67 +883,70 @@ section,
 .about .icon-box:hover h4 a {
   color: var(--accent-color);
 }
-
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
   transition: all 0.3s ease-in-out;
   height: 100%;
   position: relative;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0; /* Remove padding for image-only view */
+  overflow: hidden; /* Prevent text from spilling over */
 }
 
+.services .service-item h4,
+.services .service-item p {
+  opacity: 0; /* Initially hide text */
+  transition: opacity 0.3s ease-in-out;
+  color: white; /* Ensure text is readable on the background */
+  position: relative;
+  z-index: 2; /* Keep text above the background */
+  padding: 10px;
+  margin: 0;
+}
+
+.services .service-item:hover h4,
+.services .service-item:hover p {
+  opacity: 1; /* Show text on hover */
+}
+
+/* Ensure the entire service item is clickable */
+.services .service-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+}
+
+/* Dark overlay on hover for better contrast */
 .services .service-item:before {
   content: "";
   position: absolute;
-  background: var(--accent-color);
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
   inset: 100% 0 0 0;
   transition: all 0.3s;
   z-index: -1;
 }
 
-.services .service-item .icon {
-  margin-bottom: 10px;
-}
-
-.services .service-item .icon i {
-  color: var(--accent-color);
-  font-size: 36px;
-  transition: ease-in-out 0.3s;
-}
-
-.services .service-item h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.services .service-item h4 a {
-  color: var(--heading-color);
-  transition: ease-in-out 0.3s;
-}
-
-.services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-  transition: ease-in-out 0.3s;
-}
-
-.services .service-item:hover h4 a,
-.services .service-item:hover .icon i,
-.services .service-item:hover p {
-  color: var(--contrast-color);
-}
-
 .services .service-item:hover:before {
-  background: var(--accent-color);
   inset: 0;
-  border-radius: 0px;
+}
+
+.services .service-item:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Maintain background when hovering */
 }
 
 /*--------------------------------------------------------------
