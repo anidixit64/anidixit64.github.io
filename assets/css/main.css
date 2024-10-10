@@ -799,20 +799,7 @@ section,
   height: 320px;
   object-fit: cover;
   margin-bottom: 10px; /* Adjust the spacing if needed */
-  
-  /* Center the image */
-  display: block;
-  margin: 0 auto;
-  
-  /* Move the image up */
-  position: relative;
-  top: -50px; /* Adjust the value to move it up as much as needed */
-  
-  /* Add a border */
-  border: 5px solid #000; /* 5px black solid border, change color or width as needed */
-  border-radius: 50%; /* Keeps the rounded circle shape */
 }
-
 
 .hero h2 {
   margin: 0;
