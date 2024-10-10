@@ -771,7 +771,7 @@ section,
   top: -50px; /* Adjust the value to move it up as much as needed */
   
   /* Add a border */
-  border: 10px solid #282e13; /* 5px black solid border, change color or width as needed */
+  border: 10px solid #f1e9d2; /* 5px black solid border, change color or width as needed */
   border-radius: 50%; /* Keeps the rounded circle shape */
 }
 
@@ -812,7 +812,7 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--default-color);
+  color: var(--background-color);
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
