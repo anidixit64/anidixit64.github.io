@@ -757,10 +757,10 @@ section,
 }
 
 .hero img.rounded-circle {
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
-  margin-bottom: 10px; /* Adjust the spacing if needed */
+  margin-bottom: 5px; /* Adjust the spacing if needed */
   
   /* Center the image */
   display: block;
