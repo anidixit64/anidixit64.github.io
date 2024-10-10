@@ -746,7 +746,6 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -778,40 +777,6 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontal centering */
-  justify-content: center; /* Vertical centering */
-  text-align: center; /* Ensures all text is centered */
-  height: 100%; /* Ensure the container spans full height */
-}
-
-.hero .col-lg-8 {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Horizontal centering */
-  justify-content: center; /* Vertical centering */
-  text-align: center; /* Ensures all text is centered */
-}
-
-  /* Circular Profile Image styling */
-.hero img.rounded-circle {
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  margin-bottom: 10px; /* Adjust the spacing if needed */
-
-  /* Center the image */
-  display: block;
-  margin: 0 auto;
-
-  /* Move the image up */
-  position: relative;
-  top: -50px; /* Adjust the value to move it up as much as needed */
-
-  /* Add a border */
-  border: 5px solid #000; /* 5px black solid border, change color or width as needed */
-  border-radius: 50%; /* Keeps the rounded circle shape */
 }
 
 .hero h2 {
@@ -820,15 +785,11 @@ section,
   font-weight: 700;
 }
 
-
-
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
   color: var(--heading-color);
 }
-
-
 
 .hero .btn-get-started {
   color: var(--default-color);
@@ -844,15 +805,11 @@ section,
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-
-
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
   border-color: var(--accent-color);
 }
-
-
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -863,7 +820,6 @@ section,
     font-size: 18px;
   }
 }
-
 
 /*--------------------------------------------------------------
 # About Section
