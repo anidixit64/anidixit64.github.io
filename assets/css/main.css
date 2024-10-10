@@ -1031,7 +1031,7 @@ section,
 /*--------------------------------------------------------------
 # Writing Section
 --------------------------------------------------------------*/
-.features.section {
+.writing.section {
   background-color: #f1e9d2; /* Light background color for contrast */
   padding: 60px 0; /* Increased padding for a spacious feel */
 }
@@ -1059,6 +1059,7 @@ section,
   border-radius: 5px; /* Rounded corners for the button */
   display: inline-block; /* Makes the link behave like a button */
   transition: background-color 0.3s; /* Transition for background color change */
+  margin-top: 10px;
 }
 
 .paper-link:hover {
