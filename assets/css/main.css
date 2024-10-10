@@ -771,7 +771,7 @@ section,
   top: -50px; /* Adjust the value to move it up as much as needed */
   
   /* Add a border */
-  border: 5px solid #000; /* 5px black solid border, change color or width as needed */
+  border: 10px solid #282e13; /* 5px black solid border, change color or width as needed */
   border-radius: 50%; /* Keeps the rounded circle shape */
 }
 
