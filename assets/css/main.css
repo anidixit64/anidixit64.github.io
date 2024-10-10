@@ -777,12 +777,6 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontal centering */
-  justify-content: center; /* Vertical centering */
-  text-align: center; /* Ensures all text is centered */
-  height: 100%; /* Ensure the container spans full height */
 }
 
 .hero .col-lg-8 {
