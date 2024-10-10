@@ -1037,56 +1037,81 @@ section,
 }
 
 .paper-item {
-  background-color: #282e13; /* White background for each paper item */
-  color: #f1e9d2;
-  border-radius: 8px; /* Rounded corners for a softer look */
+  background-color: #282e13; /* Dark background for each paper item */
+  color: #f1e9d2; /* Text color */
+  border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside each paper item */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s; /* Smooth transition on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+  margin-bottom: 20px; /* Spacing between items */
 }
 
 .paper-item:hover {
   transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
 }
 
 /* Styles for the paper links */
 .paper-link {
-  background-color: #1a557d; /* Button background color */
+  background-color: #2a0e12; /* Button background color */
   color: #f1e9d2; /* Button text color */
   font-weight: 500; /* Boldness for visibility */
   text-decoration: none; /* Remove underline */
   padding: 10px 20px; /* Padding for the button */
   border-radius: 5px; /* Rounded corners for the button */
   display: inline-block; /* Makes the link behave like a button */
-  transition: background-color 0.3s; /* Transition for background color change */
+  transition: background-color 0.3s, transform 0.3s; /* Transition for background color change */
   margin-top: 10px;
 }
 
 .paper-link:hover {
   background-color: #f1e9d2; /* Button background color on hover */
-  color: #1a557d; /* Button text color on hover */
+  color: #2a0e12; /* Button text color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .divider {
-  border: 1px solid #2a0e12; /* Light gray divider */
+  border: 1px solid #9b9db0; /* Light gray divider */
   margin: 20px 0; /* Space around the divider */
 }
 
 /* Heading styles */
 .writing h2 {
-  color: #f1e9d2; /* Title color */
+  color: #282e13; /* Darker title color for contrast */
   font-weight: bold; /* Font weight */
   text-align: center; /* Center the title */
+  font-size: 2.5rem; /* Responsive title size */
+  margin-bottom: 40px; /* Space below title */
 }
 
 .writing h3 {
   color: #f1e9d2; /* Paper title color */
   font-weight: 600; /* Font weight for visibility */
+  font-size: 1.75rem; /* Consistent font size */
+  margin-bottom: 10px; /* Space below titles */
 }
 
 .writing p {
-  color: #f1e9d2; /* Paragraph color */
+  color: #9b9db0; /* Softer color for text */
+  font-size: 1rem; /* Font size for paragraphs */
+  margin: 0; /* Reset default margin */
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .writing h2 {
+    font-size: 2rem; /* Adjust title size on small screens */
+  }
+
+  .writing h3 {
+    font-size: 1.5rem; /* Adjust paper title size on small screens */
+  }
+
+  .paper-link {
+    padding: 8px 16px; /* Adjust button padding on small screens */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section
