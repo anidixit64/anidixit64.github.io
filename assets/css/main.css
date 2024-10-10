@@ -1048,15 +1048,21 @@ section,
   transform: translateY(-5px); /* Slight lift on hover */
 }
 
+/* Styles for the paper links */
 .paper-link {
-  color: #9b9db0; /* Link color */
+  background-color: #1a557d; /* Button background color */
+  color: #f1e9d2; /* Button text color */
   font-weight: 500; /* Boldness for visibility */
-  text-decoration: underline; /* Underline for emphasis */
-  transition: color 0.3s; /* Transition for color change */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  display: inline-block; /* Makes the link behave like a button */
+  transition: background-color 0.3s; /* Transition for background color change */
 }
 
 .paper-link:hover {
-  color: #1a557d; /* Lighter blue on hover */
+  background-color: #f1e9d2; /* Button background color on hover */
+  color: #1a557d; /* Button text color on hover */
 }
 
 .divider {
@@ -1064,6 +1070,21 @@ section,
   margin: 20px 0; /* Space around the divider */
 }
 
+/* Heading styles */
+h2 {
+  color: #f1e9d2; /* Title color */
+  font-weight: bold; /* Font weight */
+  text-align: center; /* Center the title */
+}
+
+h3 {
+  color: #f1e9d2; /* Paper title color */
+  font-weight: 600; /* Font weight for visibility */
+}
+
+p {
+  color: #f1e9d2; /* Paragraph color */
+}
 
 /*--------------------------------------------------------------
 # Contact Section
